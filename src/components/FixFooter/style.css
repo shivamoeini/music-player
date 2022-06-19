@@ -1,0 +1,12 @@
+.fix-footer {
+  position: fixed;
+  bottom:0 ;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 10px;
+  background: grey;
+  background: url(./../../assets/footer-bg-1.jpg);
+  background-size: cover;
+  background-position: center;
+}
