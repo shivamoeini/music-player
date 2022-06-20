@@ -1,6 +1,13 @@
 import "./style.css";
 
-const Tabs = (prps) => {
+const Tabs = ({
+  tabData
+
+}) => {
+
+
+console.log(tabData);
+
   return (
     <div className="tab-container">
       {/*  tab heder*/}
