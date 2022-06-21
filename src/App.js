@@ -18,7 +18,7 @@ function App() {
       .then((res) => res.json())
       .then((jsonResp) => {
         console.log({ jsonResp });
-      setAppData(appData)
+      setAppData(jsonResp.appData)
       })
       .catch((error) => {
         console.log({ error });
@@ -30,7 +30,7 @@ function App() {
       <Header />
       <h2 className="mtb-20 app-quote">Find the best music for your code</h2>
       <SearchInput />
-      <Tabs tabData={appData['homesCREEN']} />
+      <Tabs tabData={appData['homeScreen']} />
       {list && <AudioList onBackButtonPress={onBackButtonPress} />}
 
       {/* <button onClick={()=>setList(true)}>btn</button> */}

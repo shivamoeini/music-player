@@ -6,15 +6,20 @@ const Tabs = ({
 }) => {
 
 
-console.log(tabData);
+console.log({tabData});
 
   return (
     <div className="tab-container">
       {/*  tab heder*/}
       <div className="tab-header flex">
-        <a className="active" href="#commercial">
-          Commercial
-        </a>
+        {
+         tabData && Object.keys(tabData).map((tab,index)=>{
+            <a key={index} className="active" href="#commercial">
+            {tabData[tab].lable}
+          </a>
+          })
+        }
+      
         <a href="#freelicense">Free License</a>
       </div>
       {/* tab content*/}
